@@ -77,6 +77,21 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.hectorclient</groupId>
+            <artifactId>hector-core</artifactId>
+            <version>1.1-4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hectorclient</groupId>
+            <artifactId>hector-test</artifactId>
+            <version>1.1-4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hectorclient</groupId>
+            <artifactId>hector-object-mapper</artifactId>
+            <version>3.1-09</version>
+        </dependency>
+        <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>14.0.1</version>
@@ -128,7 +143,7 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
-            <version>${hibernate.version}</version>
+            <version>4.2.0.Final</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -180,6 +195,16 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.0-api</artifactId>
+            <version>1.0.1.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
             <version>${spring.version}</version>
         </dependency>
         <dependency>
@@ -258,26 +283,36 @@
             <artifactId>spring-security-web</artifactId>
             <version>${spring.version}</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.apache.cassandra</groupId>-->
+            <!--<artifactId>cassandra-all</artifactId>-->
+            <!--<version>2.0.1</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib</artifactId>
             <version>2.2</version>
         </dependency>
         <dependency>
-	  <groupId>com.datastax.cassandra</groupId>
-	  <artifactId>cassandra-driver-core</artifactId>
-	  <version>1.0.0</version>
-	</dependency>
-	<dependency>
-	  <groupId>com.netflix.astyanax</groupId>
-	  <artifactId>astyanax</artifactId>
-	  <version>1.0.1</version>
-	  <exclusions>
-	    <exclusion>
-	      <artifactId>commons-lang</artifactId>
-	      <groupId>commons-lang</groupId>
-	    </exclusion>
-	  </exclusions>
-	</dependency>
+            <groupId>com.datastax.cassandra</groupId>
+            <artifactId>cassandra-driver-core</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.stephenc</groupId>
+            <artifactId>jamm</artifactId>
+            <version>0.2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.netflix.astyanax</groupId>
+            <artifactId>astyanax</artifactId>
+            <version>1.56.43</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>commons-lang</artifactId>
+                    <groupId>commons-lang</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
     </dependencies>
 </project>

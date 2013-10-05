@@ -1,4 +1,4 @@
-package dan.exception;
+package com.github.antiportal.exception;
 
 /**
  * Converter should log stack trace him self.

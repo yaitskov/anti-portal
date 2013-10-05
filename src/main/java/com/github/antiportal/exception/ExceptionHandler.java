@@ -1,6 +1,6 @@
-package dan.exception;
+package com.github.antiportal.exception;
 
-import dan.utils.LogUtil;
+import com.github.antiportal.utils.LogUtil;
 import org.apache.commons.lang3.reflect.ConstructorUtils;
 import org.slf4j.Logger;
 import org.springframework.core.Ordered;

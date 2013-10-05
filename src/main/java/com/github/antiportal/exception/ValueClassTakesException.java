@@ -1,6 +1,6 @@
-package dan.exception;
+package com.github.antiportal.exception;
 
-import dan.utils.ClassMap;
+import com.github.antiportal.utils.ClassMap;
 import org.apache.commons.lang3.reflect.ConstructorUtils;
 
 import java.lang.reflect.Constructor;

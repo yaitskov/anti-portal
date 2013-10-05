@@ -1,4 +1,4 @@
-package dan.utils;
+package com.github.antiportal.utils;
 
 import com.google.common.base.Function;
 

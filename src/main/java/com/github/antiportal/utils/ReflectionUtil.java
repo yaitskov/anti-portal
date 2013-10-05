@@ -1,4 +1,4 @@
-package dan.utils;
+package com.github.antiportal.utils;
 
 /**
  * Daneel Yaitskov

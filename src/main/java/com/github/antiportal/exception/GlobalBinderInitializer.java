@@ -1,4 +1,4 @@
-package dan.exception;
+package com.github.antiportal.exception;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.Validator;
