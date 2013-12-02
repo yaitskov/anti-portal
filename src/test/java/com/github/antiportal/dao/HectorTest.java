@@ -18,15 +18,13 @@ public class HectorTest {
     @Test
     public void test() {
         Cluster cluster = HFactory.getOrCreateCluster("AntiPortal", "cas3:9160");
-        Keyspace keyspace = HFactory.createKeyspace("testkeyspace", cluster);
-//        HFactory.createMutator()
+        Keyspace keyspace = HFactory.createKeyspace("xxx", cluster);
 
         try {
             EntityManagerImpl em = new EntityManagerImpl(keyspace, "com.github.antiportal.dao");
 
             MyPojo pojo1 = new MyPojo();
-            pojo1.setId(777);
-            pojo1.setLongProp1(123L);
+            pojo1.setId(33);
             pojo1.setName("hello");
             em.persist(pojo1);
 

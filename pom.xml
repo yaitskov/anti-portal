@@ -77,26 +77,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.datastax.cassandra</groupId>
-            <artifactId>cassandra-driver-core</artifactId>
-            <version>2.0.0-rc1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hectorclient</groupId>
-            <artifactId>hector-core</artifactId>
-            <version>1.1-4</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hectorclient</groupId>
-            <artifactId>hector-test</artifactId>
-            <version>1.1-4</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hectorclient</groupId>
-            <artifactId>hector-object-mapper</artifactId>
-            <version>3.1-09</version>
-        </dependency>
-        <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>14.0.1</version>
@@ -289,11 +269,6 @@
             <version>${spring.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.cassandra</groupId>
-            <artifactId>cassandra-all</artifactId>
-            <version>2.0.1</version>
-        </dependency>
-        <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib</artifactId>
             <version>2.2</version>
@@ -301,13 +276,39 @@
         <!--<dependency>-->
             <!--<groupId>com.datastax.cassandra</groupId>-->
             <!--<artifactId>cassandra-driver-core</artifactId>-->
-            <!--<version>1.0.0</version>-->
+            <!--<version>2.0.0-rc1</version>-->
         <!--</dependency>-->
         <dependency>
-            <groupId>com.github.stephenc</groupId>
-            <artifactId>jamm</artifactId>
-            <version>0.2.5</version>
+        <groupId>com.datastax.cassandra</groupId>
+        <artifactId>cassandra-driver-core</artifactId>
+        <version>1.0.4</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.cassandra</groupId>
+            <artifactId>cassandra-all</artifactId>
+            <version>1.2.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hectorclient</groupId>
+            <artifactId>hector-core</artifactId>
+            <version>1.1-4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hectorclient</groupId>
+            <artifactId>hector-test</artifactId>
+            <version>1.1-4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hectorclient</groupId>
+            <artifactId>hector-object-mapper</artifactId>
+            <version>3.1-09</version>
+        </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>com.github.stephenc</groupId>-->
+            <!--<artifactId>jamm</artifactId>-->
+            <!--<version>0.2.5</version>-->
+        <!--</dependency>-->
         <!--<dependency>-->
             <!--<groupId>com.netflix.astyanax</groupId>-->
             <!--<artifactId>astyanax</artifactId>-->

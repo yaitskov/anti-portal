@@ -11,17 +11,13 @@ import java.util.UUID;
  * Daneel Yaitskov
  */
 @Entity
-@Table(name="testcolumnfamily")
+@Table(name="ticks")
 public class MyPojo {
-    @Id
-//    @Column(name="id")
+//    @Id
+    @Column(name="idx")
     private int id;
 
-//    @Column(name="lp1")
-    private long longProp1;
-
-//    @me.prettyprint.hom.annotations.Column(name="name")
-    @Column(name = "name", length = 100)
+    @Column(name = "lbl")
     private String name;
 
     public int getId() {
@@ -30,14 +26,6 @@ public class MyPojo {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public long getLongProp1() {
-        return longProp1;
-    }
-
-    public void setLongProp1(long longProp1) {
-        this.longProp1 = longProp1;
     }
 
     public String getName() {
@@ -56,17 +44,10 @@ public class MyPojo {
         MyPojo myPojo = (MyPojo) o;
 
         if (id != myPojo.id) return false;
-//        if (longProp1 != myPojo.longProp1) return false;
         if (name != null ? !name.equals(myPojo.name) : myPojo.name != null) return false;
 
         return true;
     }
 
-    @Override
-    public int hashCode() {
-        int result = (int) (id ^ (id >>> 32));
-//        result = 31 * result + (int) (longProp1 ^ (longProp1 >>> 32));
-        result = 31 * result + (name != null ? name.hashCode() : 0);
-        return result;
-    }
+
 }
