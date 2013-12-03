@@ -45,7 +45,8 @@ public class TickProcessor {
         int millisec = (int) (created.getTime() % TimeUnit.MINUTES.toMillis(10));
         String[] instr = t[0].split(":");
 
-        s.execute(Q, tenmin, instr[0], instr[1],
+
+        s.executeAsync(Q, tenmin, instr[0], instr[1],
                 millisec,
                 (int) (Long.parseLong(t[2]) % Integer.MAX_VALUE),
                 t[5],
